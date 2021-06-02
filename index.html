@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div id="toggle" class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+    <ul id="menu">
+        <li>Home</li>
+        <li>Portfolio</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+       </ul>
+        <script>
+            
+            $("#toggle").on('click', function() {
+            $('#menu').toggleClass("active");
+            });
+
+            function myFunction(x) {
+            x.classList.toggle("change");
+            }
+
+        </script>
+</body>
+</html>
